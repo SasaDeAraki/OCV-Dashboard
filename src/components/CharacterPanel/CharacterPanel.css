@@ -1,0 +1,179 @@
+.character-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.container-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.hp-structure-container {
+    display: flex;
+    font-size: 48px;
+}
+
+.hp-structure-container button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hp-container {
+    display: flex;
+}
+
+.hp-container img {
+    width: 60px;
+    height: 60px;   
+}
+
+.hp-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hp-controls div {
+    display: flex;
+    gap: 8px;
+}
+
+.hp-controls button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    font-weight: 800;
+    color: #7fa875;
+}
+
+.button-char-hp button {
+    color: #eb4141;
+}
+
+.button-heat button {
+    color: #da892d;
+}
+
+.hp-controls button:hover {
+    cursor: pointer;
+}
+
+.char-hp-bar-wrapper {
+    width: 938px;
+    height: 13px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.hp-bar-wrapper {
+    width: 700px;
+    height: 13px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.char-hp-bar {
+    height: 100%;
+    background-color: #E30000;
+    transition: width 0.1s ease-in-out;
+}
+
+.hp-bar {
+    height: 100%;
+    background-color: #26BC00;
+    transition: width 0.1s ease-in-out;
+}
+
+.heat-bar {
+    height: 100%;
+    background-color: #E37900;
+    transition: width 0.1s ease-in-out;
+}
+
+.edit-button {
+    display: flex;
+    margin-top: auto;
+    margin-left: 5px;
+    transform: translate(0, 20%);
+}
+
+.edit-button img:hover {
+    cursor: pointer;
+}
+
+.struct-buttons button:hover {
+    cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid rgb(85, 85, 85);
+  font-size: 18px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    padding: 7px 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.modal-buttons button:hover {
+    cursor: pointer;
+}
