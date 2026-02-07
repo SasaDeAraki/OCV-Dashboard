@@ -14,7 +14,7 @@ export default function Header({ characterId, characterData }) {
     const portraits = {
         leon: portraitBuzz,
         sales: portraitFestor,
-        sereno: portraitRenna,
+        ze_sereno: portraitRenna,
     }
 
     return (
