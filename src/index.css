@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('./assets/images/background.png');
-  background-repeat: no-repeat;
   font-family: 'OldNewspaperTypes', serif;
 }
 
