@@ -66,7 +66,7 @@ header h2, h3 {
 
 .header-character img {
     position: absolute;
-    width: 450px;
+    width: 100%;
     height: 450px;
     opacity: 0.85;
 }
@@ -78,12 +78,11 @@ header h2, h3 {
 }
 
 .header-portrait img {
-    width: 244px;
-    height: 244px;
-    margin: 0;
+    width: fit-content;
+    height: 214px;
     position: absolute;
-    right: 30px;
-    top: 0;
+    right: 70px;
+    top: 20px;
 }
 
 .giro-loop {

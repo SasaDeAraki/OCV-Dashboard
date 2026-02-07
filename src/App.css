@@ -1,7 +1,30 @@
 .characters-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    margin: auto 480px;
+    margin: auto 370px;
+}
+
+.characters-container a img {
+    width: 320px;
+}
+
+.characters-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.logo {
+    position: absolute;
+}
+
+.logo img {
+    height: 500px;
 }
