@@ -39,6 +39,11 @@
 .hp-controls {
     display: flex;
     justify-content: space-between;
+    color: #fff;
+}
+
+.hp-controls span, button {
+    filter: blur(1px);
 }
 
 .hp-controls div {
@@ -51,15 +56,23 @@
     border: none;
     font-size: 32px;
     font-weight: 800;
-    color: #7fa875;
+    color: #fff;
 }
 
 .button-char-hp button {
-    color: #eb4141;
+    color: #fff;
 }
 
 .button-heat button {
-    color: #da892d;
+    color: #fff;
+}
+
+.button-pe button {
+    color: #FF9D24;
+}
+
+.button-pe span {
+    color: #FF9D24;
 }
 
 .hp-controls button:hover {
@@ -92,13 +105,13 @@
 
 .hp-bar {
     height: 100%;
-    background-color: #26BC00;
+    background-color: #E45050;
     transition: width 0.1s ease-in-out;
 }
 
 .heat-bar {
     height: 100%;
-    background-color: #E37900;
+    background-color: #009BE3;
     transition: width 0.1s ease-in-out;
 }
 

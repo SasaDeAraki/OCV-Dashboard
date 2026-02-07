@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { db } from "../../firebase";
 import { ref, get, set, onValue } from "firebase/database";
 import "./CharacterPanel.css"
-import StructureIcon from "../../assets/images/Structure.png"
-import StressIcon from "../../assets/images/Stress.png"
+import HpIcon from "../../assets/images/hp_icon.png"
+import SanityIcon from "../../assets/images/sanity_icon.png"
+import PeIcon from "../../assets/images/pe_icon.png"
 import EditIcon from "../../assets/images/edit.png"
 import Gauss1 from "../../assets/images/gauss-1.png"
 import Gauss2 from "../../assets/images/gauss-2.png"
@@ -116,7 +117,7 @@ export default function CharacterPanel({ characterId }) {
             <div className="character-panel">
                 <div className="hp-structure-container">
                     <div className="hp-container">
-                        <img src={StructureIcon} />
+                        <img src={HpIcon} />
                         <div>
                             <div className="hp-controls">
                                 <span>HP:</span>
@@ -140,7 +141,7 @@ export default function CharacterPanel({ characterId }) {
 
                 <div className="hp-structure-container">
                     <div className="hp-container">
-                        <img src={StressIcon} />
+                        <img src={SanityIcon} />
                         <div>
                             <div className="hp-controls">
                                 <span>Sanidade:</span>
@@ -164,11 +165,11 @@ export default function CharacterPanel({ characterId }) {
 
                 <div className="hp-structure-container" style={{ marginRight: "auto" }}>
                     <div className="hp-container">
-                        <img src={StressIcon} />
+                        <img src={PeIcon} />
                         <div>
                             <div className="hp-controls">
                                 <span>PE:</span>
-                                <div className="button-heat">
+                                <div className="button-pe">
                                     <button onClick={() => changePE(-5)}>-5</button>
                                     <button onClick={() => changePE(-1)}>-</button>
                                     <span>{stats.current_pe}/{stats.max_pe}</span>

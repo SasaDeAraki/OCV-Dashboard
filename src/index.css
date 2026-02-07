@@ -1,26 +1,25 @@
 @font-face {
-  font-family: 'Epkaisho';
-  src: url('./assets/fonts/EPKAISHO.woff') format('truetype');
-  font-weight: normal;
+  font-family: 'LEDLIGHT';
+  src: url('../src/fonts/LEDLIGHT.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
-* {
-    font-family: 'Epkaisho', sans-serif;
+@font-face {
+  font-family: 'MODERN TYPEWRIGHTER';
+  src: url('/fonts/MODERN_TYPEWRIGHTER.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OldNewspaperTypes';
+  src: url('/fonts/OldNewspaperTypes.ttf') format('truetype');
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url('./assets/images/always-grey.png');
-  background-repeat: repeat;
-  background-size: 35px 35px;
-  animation:  moveBackground 10s linear infinite;
-  background-color: rgb(243, 243, 243);
-  scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;    /* IE 10+ */
-  overflow: hidden;
+  background-image: url('./assets/images/background.png');
+  font-family: 'OldNewspaperTypes', serif;
 }
 
 body::-webkit-scrollbar {

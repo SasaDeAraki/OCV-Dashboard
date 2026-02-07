@@ -7,6 +7,7 @@ import portraitFestor from "../../assets/images/festor.png"
 import portraitRenna from "../../assets/images/renna.png"
 import portraitTrex from "../../assets/images/trex.png"
 import portraitZe from "../../assets/images/ze.png"
+import headerImg from "../../assets/images/header.png"
 
 
 export default function Header({ characterId, characterData }) {
@@ -18,17 +19,16 @@ export default function Header({ characterId, characterData }) {
 
     return (
         <header>
-            <div className="botao-header">
-                <Link to="/"><img src={ arrow } /></Link>
-            </div>
-            <div className="header-character">
-                <h2 style={{ fontSize: '48px' }}>Æsubject</h2>
-                <h2 style={{ fontSize: '98px', width: '18rem' }}>{characterId.toUpperCase()}</h2>
-                <img src={ elipse } className="giro-loop" />
-            </div>
-            <div className="header-flavor">
-                <h3 style={{ fontSize: '48px' }}># {characterData.flavor.toUpperCase()}</h3>
-                <div className="decoration-bar" style={{ backgroundColor: `${characterData.cor}` }}></div>
+            <div className="container-header">
+                <div className="botao-header">
+                    <Link to="/"><img src={arrow} /></Link>
+                </div>
+                <div className="header-character">
+                    <h2 style={{ fontSize: '98px' }}>{characterId.toUpperCase()}</h2>
+                </div>
+                <div className="header-flavor">
+                    <h3 style={{ fontSize: '48px' }}>{characterData.flavor.toUpperCase()}</h3>
+                </div>
             </div>
             <div className="header-portrait">
                 <img src={portraits[characterId]} alt={characterId} />
