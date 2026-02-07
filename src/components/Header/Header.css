@@ -46,7 +46,8 @@ header h2, h3 {
 }
 
 .header-flavor {
-    display: flex;
+    width: 100%;
+    text-wrap: nowrap;
     margin-top: auto;
     font-family: 'Modern Typewriter', monospace;
     margin-left: 30px;
