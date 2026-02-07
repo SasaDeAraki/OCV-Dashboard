@@ -95,6 +95,7 @@
     border: none;
     border-radius: 0;
     overflow: hidden;
+    filter: blur(1.5px);
 }
 
 .char-hp-bar {
